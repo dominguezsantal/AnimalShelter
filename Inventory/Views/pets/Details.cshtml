@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Inventory.Models.Pet
+
+<h2>Pet Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+<h3>@Html.DisplayNameFor(model => model.Quantity): @Html.DisplayFor(model => model.Quantity)<h3>
+<p>@Html.ActionLink("Edit Pet", "Edit", new { id = Model.PetId })</p>
+<p>@Html.ActionLink("Delete Pet", "Delete", new { id = Model.PetId })</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>
