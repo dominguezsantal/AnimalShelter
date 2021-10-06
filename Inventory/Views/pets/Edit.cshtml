@@ -2,15 +2,15 @@
   Layout = "_Layout";
 }
 
-@model Inventory.Models.Collectible
+@model Inventory.Models.Pet
 
 <h2>Edit</h2>
 
-<h4>Edit this collectible: @Html.DisplayFor(model => model.Name)</h4>
+<h4>Edit this pet: @Html.DisplayFor(model => model.Name)</h4>
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.CollectibleId)
+    @Html.HiddenFor(model => model.PetId)
 
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)

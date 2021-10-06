@@ -27,7 +27,7 @@ namespace Inventory.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(pet pet)
+    public ActionResult Create(Pet pet)
     {
       _db.Pet.Add(pet);
       _db.SaveChanges();

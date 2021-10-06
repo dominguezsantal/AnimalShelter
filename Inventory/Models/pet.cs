@@ -6,7 +6,7 @@ namespace Inventory.Models
     public string Name { get; set; }
     public int Quantity { get; set; }
 
-    public int PetId { get; set; }
+    public int PetsCollectionId { get; set; }
     public virtual PetsCollection PetsCollection { get; set; }
   }
 }

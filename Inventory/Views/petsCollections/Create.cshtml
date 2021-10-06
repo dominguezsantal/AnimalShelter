@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Inventory.Models.Pet
+
+<h4>Add a new pet</h4>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    
+    @Html.LabelFor(model => model.Quantity)
+    @Html.TextBoxFor(model => model.Quantity)
+    
+    @Html.LabelFor(model => model.Pet)
+    @Html.DropDownList("PetId")
+    
+    <input type="submit" value="Add new pet" class="btn btn-default"/>
+}
+<p>@Html.ActionLink("Show all pets", "Index")</p>
