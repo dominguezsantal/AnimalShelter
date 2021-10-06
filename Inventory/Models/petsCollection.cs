@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Inventory.Models
 {
-    public class Collection
+    public class PetsCollection
     {
         public PetsCollection()
         {
