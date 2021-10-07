@@ -49,7 +49,7 @@ namespace Inventory
   }
   public static class DBConfiguration
   {
-    public static string ConnectionString = "server=localhost;user id=root;password=Azulmaya5!;port=3306;database=animal_shelter;";
+    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=animal_shelter;";
   }
 }
 }
